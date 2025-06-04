@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join as Gig Worker | GigConnect</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+   <nav>
+  <div class="menu-toggle" id="menuToggle">☰</div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="browse.html">Browse Workers</a>
+    <a href="register.html">Join as Worker</a>
+    <a href="post-job.html">Post a Job</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html" id="loginBtn">Login</a>
+    <a href="#" id="logoutBtn">Logout</a>
+
+  </div>
+</nav>
+
+  </header>
+
+  <main class="form-container">
+    <h2>Join as a Gig Worker</h2>
+    <form id="registerForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="category">Work Category</label>
+      <select id="category" required>
+        <option value="">-- Select Category --</option>
+        <option value="plumber">Plumber</option>
+        <option value="electrician">Electrician</option>
+        <option value="carpenter">Carpenter</option>
+      </select>
+
+      <label for="rate">Your Rate (in ₹)</label>
+      <input type="number" id="rate" required>
+
+      <label for="location">Location</label>
+      <input type="text" id="location" required>
+
+      <label for="rating">Your Rating (1-5)</label>
+      <input type="number" step="0.1" max="5" min="1" id="rating" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="successMessage" class="success-message"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GigConnect. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
