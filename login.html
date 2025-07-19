@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login | GigConnect</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">GigConnect</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="browse.html">Browse Workers</a>
+      <a href="register.html">Join as Worker</a>
+      <a href="post-job.html">Post a Job</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="loginEmail">Email</label>
+      <input type="email" id="loginEmail" required>
+
+      <label for="loginPassword">Password</label>
+      <input type="password" id="loginPassword" required>
+
+      <label for="loginRole">Login As</label>
+      <select id="loginRole" required>
+        <option value="">-- Select Role --</option>
+        <option value="customer">Customer</option>
+        <option value="worker">Worker</option>
+      </select>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div id="loginMessage" class="success-message"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GigConnect. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
